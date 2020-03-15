@@ -1,14 +1,23 @@
 /**
- * My awesome module.
- * @param input Lorem ipsum.
- * @param postfix Lorem ipsum.
+ * Coordinate data.
+*/
+interface LocationData {
+	latitude: number
+	longitude: number
+}
+
+/**
+ * Get the coordinates of the current location.
  * @example
  * ```
- * const theModule = require("the-module");
- * theModule("unicorns");
- * //=> 'unicorns & rainbows'
+ * const getLocation = require("get-location");
+ *
+ * (async () => {
+ * 	await getLocation();
+ * 	//=> { latitude: -36.8484437, longitude: 174.7600023 }
+ * })();
  * ```
 */
-declare function theModule(input: string, { postfix }: { postfix?: string }): string;
+declare function getLocation(): Promise<LocationData>
 
-export = theModule;
+export = getLocation

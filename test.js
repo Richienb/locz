@@ -1,13 +1,8 @@
 const test = require("ava")
-const theModule = require(".")
+const getLocation = require(".")
 
-test("main", (t) => {
-	t.throws(() => {
-		theModule(123)
-	}, {
-		instanceOf: TypeError,
-		message: "Expected a string, got number",
-	})
-
-	t.is(theModule("unicorns"), "unicorns & rainbows")
+test("main", async (t) => {
+	const { latitude, longitude } = await getLocation()
+	t.is(typeof latitude, "number")
+	t.is(typeof longitude, "number")
 })
