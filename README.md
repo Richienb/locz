@@ -1,26 +1,26 @@
-# Get Location [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/get-location/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/get-location)
+# locz [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/locz/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/locz)
 
 Get the coordinates of the current location.
 
-[![NPM Badge](https://nodei.co/npm/get-location.png)](https://npmjs.com/package/get-location)
+[![NPM Badge](https://nodei.co/npm/locz.png)](https://npmjs.com/package/locz)
 
 ## Install
 
 ```sh
-npm install get-location
+npm install locz
 ```
 
 ## Usage
 
 ```js
-const getLocation = require("get-location");
+const locz = require("locz");
 
 (async () => {
-	await getLocation();
+	await locz();
 	//=> { latitude: -36.8484437, longitude: 174.7600023 }
 })();
 ```
 
 ## API
 
-### getLocation()
+### locz()

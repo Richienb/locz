@@ -1,8 +1,8 @@
 {
-	"name": "get-location",
+	"name": "locz",
 	"version": "0.0.0",
 	"description": "Get the coordinates of the current location.",
-	"repository": "https://github.com/Richienb/get-location.git",
+	"repository": "https://github.com/Richienb/locz.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
 	"license": "MIT",
 	"main": "index.js",
