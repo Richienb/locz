@@ -1,12 +1,4 @@
 /**
- * Coordinate data.
-*/
-interface LocationData {
-	latitude: number
-	longitude: number
-}
-
-/**
  * Get the coordinates of the current location.
  * @example
  * ```
@@ -18,6 +10,16 @@ interface LocationData {
  * })();
  * ```
 */
-declare function locz(): Promise<LocationData>
+declare function locz(): Promise<locz.LocationData>
+
+declare namespace locz {
+	/**
+	 * Coordinate data.
+	 */
+	interface LocationData {
+		latitude: number
+		longitude: number
+	}
+}
 
 export = locz
