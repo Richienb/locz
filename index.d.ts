@@ -1,17 +1,3 @@
-/**
- * Get the coordinates of the current location.
- * @example
- * ```
- * const locz = require("locz");
- *
- * (async () => {
- * 	await locz();
- * 	//=> { latitude: -36.8484437, longitude: 174.7600023 }
- * })();
- * ```
-*/
-declare function locz(): Promise<locz.LocationData>
-
 declare namespace locz {
 	/**
 	 * Coordinate data.
@@ -21,5 +7,19 @@ declare namespace locz {
 		longitude: number
 	}
 }
+
+/**
+ * Get the coordinates of the current location.
+ * @example
+ * ```
+ * const locz = require("locz");
+ *
+ * (async () => {
+ *  await locz();
+ *  //=> { latitude: -36.8484437, longitude: 174.7600023 }
+ * })();
+ * ```
+*/
+declare function locz(): Promise<locz.LocationData>
 
 export = locz
