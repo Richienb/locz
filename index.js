@@ -17,5 +17,5 @@ module.exports = async () => {
 		}
 	} catch (_) { }
 
-	// return ipLocation()
+	return ipLocation()
 }
