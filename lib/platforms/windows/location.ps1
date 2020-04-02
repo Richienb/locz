@@ -1,13 +1,13 @@
-Add-Type -AssemblyName System.Device #Required to access System.Device.Location namespace
-$GeoWatcher = New-Object System.Device.Location.GeoCoordinateWatcher #Create the required object
-$GeoWatcher.Start() #Begin resolving current locaton
+Add-Type -AssemblyName System.Device
+$GeoWatcher = New-Object System.Device.Location.GeoCoordinateWatcher
+$GeoWatcher.Start()
 
-while (($GeoWatcher.Status -ne 'Ready') -and ($GeoWatcher.Permission -ne 'Denied')) {
-    Start-Sleep -Milliseconds 100 #Wait for discovery.
+while (($GeoWatcher.Status -ne "Ready") -and ($GeoWatcher.Permission -ne "Denied")) {
+    Start-Sleep -Milliseconds 100
 }
 
 if ($GeoWatcher.Permission -eq 'Denied'){
-    Write-Error 'Access Denied for Location Information'
+	Write-Error "Access wasn't granted for location information!"
 } else {
-    $GeoWatcher.Position.Location | Select Latitude,Longitude #Select the relevent results.
+    $GeoWatcher.Position.Location | Select Latitude,Longitude
 }
