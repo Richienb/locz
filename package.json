@@ -1,6 +1,6 @@
 {
 	"name": "locz",
-	"version": "1.1.1",
+	"version": "1.1.2",
 	"description": "Get the coordinates of the current location.",
 	"repository": "https://github.com/Richienb/locz.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
