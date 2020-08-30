@@ -5,8 +5,8 @@ const getCurrentPosition = require("./lib/current-position")
 
 module.exports = async () => {
 	try {
-		return getCurrentPosition()
-	} catch (_) { }
+		return await getCurrentPosition()
+	} catch (_) {}
 
 	return ipLocation()
 }
