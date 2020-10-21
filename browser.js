@@ -7,7 +7,7 @@ module.exports = async () => {
 	if (navigator && navigator.geolocation) {
 		try {
 			return await getCurrentPosition()
-		} catch (_) {}
+		} catch {}
 	}
 
 	return ipLocation()

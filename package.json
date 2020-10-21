@@ -11,7 +11,8 @@
 		"index.js",
 		"index.d.ts",
 		"browser.js",
-		"lib"
+		"lib",
+		"util"
 	],
 	"engines": {
 		"node": ">=10"
@@ -31,7 +32,8 @@
 		"command-exists": "^1.2.8",
 		"execa": "^4.0.0",
 		"ky": "^0.19.0",
-		"ky-universal": "^0.5.0"
+		"ky-universal": "^0.5.0",
+		"node-wifi": "^2.0.14"
 	},
 	"devDependencies": {
 		"ava": "^3.5.2",
