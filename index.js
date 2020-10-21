@@ -1,5 +1,4 @@
 "use strict"
-
 const macos = require("./lib/platforms/macos")
 const windows = require("./lib/platforms/windows")
 const networkLocation = require("./lib/network-location")

@@ -1,5 +1,4 @@
 "use strict"
-
 const ipLocation = require("./lib/ip-location")
 const getCurrentPosition = require("./lib/current-position")
 
