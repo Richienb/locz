@@ -2,8 +2,8 @@
 
 const macos = require("./lib/platforms/macos")
 const windows = require("./lib/platforms/windows")
-const ipLocation = require("./lib/ip-location")
 const networkLocation = require("./lib/network-location")
+const ipLocation = require("./lib/ip-location")
 
 const { platform } = process
 
