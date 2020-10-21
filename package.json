@@ -29,7 +29,6 @@
 		"locate"
 	],
 	"dependencies": {
-		"command-exists": "^1.2.8",
 		"execa": "^4.0.0",
 		"ky": "^0.19.0",
 		"ky-universal": "^0.5.0",

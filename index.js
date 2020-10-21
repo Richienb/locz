@@ -1,7 +1,5 @@
 "use strict"
 
-const commandExists = require("command-exists")
-
 const macos = require("./lib/platforms/macos")
 const windows = require("./lib/platforms/windows")
 const ipLocation = require("./lib/ip-location")
@@ -16,7 +14,7 @@ module.exports = async () => {
 		} catch {}
 	}
 
-	if (platform === "win32" && await commandExists("powershell")) {
+	if (platform === "win32") {
 		try {
 			return await windows()
 		} catch {}
