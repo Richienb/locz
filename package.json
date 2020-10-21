@@ -29,7 +29,7 @@
 		"locate"
 	],
 	"dependencies": {
-		"execa": "^4.0.0",
+		"execa": "^4.0.3",
 		"ky": "^0.19.0",
 		"ky-universal": "^0.5.0",
 		"node-wifi": "^2.0.14"
