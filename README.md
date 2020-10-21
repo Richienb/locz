@@ -13,14 +13,14 @@ npm install locz
 ## Usage
 
 ```js
-const locz = require("locz");
+const locz = require("locz")
 
-(async () => {
-	await locz();
-	//=> { latitude: -36.8484437, longitude: 174.7600023 }
-})();
+await locz()
+//=> { latitude: -36.8484437, longitude: 174.7600023 }
 ```
 
 ## API
 
 ### locz()
+
+Get the coordinates of the current location. Returns a promise that resolves with `{ latitude: number, longitude: number }`.
