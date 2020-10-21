@@ -3,7 +3,7 @@ const ipLocation = require("./lib/ip-location")
 const getCurrentPosition = require("./lib/current-position")
 
 module.exports = async () => {
-	if (navigator && navigator.geolocation) {
+	if (typeof navigator === "object" && typeof navigator.geolocation === "function") {
 		try {
 			return await getCurrentPosition()
 		} catch {}
